@@ -1,8 +1,8 @@
 require File.expand_path(File.dirname(__FILE__) + "/spec_helper")
 
-describe Integer do
+describe Probability do
 
-  #Integer.rb test cases
+  #Integer  test cases
   context "1.in(1)" do
     subject { 1.in(1) }
     specify { should be_true }
@@ -28,12 +28,7 @@ describe Integer do
     end
   end
 
-end
-
-describe Float do
-
-  #Float.rb test cases
-  #TODO: Actually test the test cases.
+  #Float test cases
   context "3.999.in(0.000)" do
     subject { 3.999.in(0.000) }
     specify { should be_false }
